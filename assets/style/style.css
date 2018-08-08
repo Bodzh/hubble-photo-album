@@ -1,0 +1,63 @@
+body{
+    background:linear-gradient(45deg,#1D2951,black) ;
+}
+header,footer{
+    height: 100px;
+    padding: 20px;
+}
+h3,h5{
+    text-align: center;
+    color: gold;
+}
+.gallery > ul {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.gallery > ul > li {
+    margin-bottom: 10px;
+    width: 200px;
+}
+.gallery > ul > li a {
+    border: 2px solid #FFF;
+    border-radius: 2px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+.gallery > ul > li a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+.gallery > ul > li a:hover > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+
+.gallery .justified-gallery > a > img {
+    -webkit-transition: -webkit-transform 0.15s ease 0s;
+    -moz-transition: -moz-transform 0.15s ease 0s;
+    -o-transition: -o-transform 0.15s ease 0s;
+    transition: transform 0.15s ease 0s;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    height: 100%;
+    width: 100%;
+}
+.gallery .justified-gallery > a:hover > img {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+}
+.gallery.dark > ul > li a {
+    border: 3px solid #04070a;
+}
+.home .gallery {
+    padding-bottom: 80px;
+}
